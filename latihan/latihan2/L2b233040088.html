@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form + Tabel</title>
+  </head>
+  <body>
+    <form>
+      <table border="3" cellpadding="10" cellspacing="0">
+        <thead bgcolor="grey">
+          <tr>
+            <th colspan="3">input data mahasiswaa</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th><label for="username">Username</label></th>
+            <td>:</td>
+            <td><input type="text" id="username" /></td>
+          </tr>
+          <tr>
+            <th><label for="password">Password</label></th>
+            <td>:</td>
+            <td><input type="password" id="password" /></td>
+          </tr>
+          <tr>
+            <th><label for="fullname">Fullname</label></th>
+            <td>:</td>
+            <td><input type="text" id="fullname" /></td>
+          </tr>
+          <tr>
+            <th><label for="email">E-mail</label></th>
+            <td>:</td>
+            <td><input type="text" id="email" /></td>
+          </tr>
+          <tr>
+            <th><label for="agama">Agama</label></th>
+            <td>:</td>
+            <td>
+              <select name="Agama" id="agama">
+                <option value="Agama">Islam</option>
+                <option value="Agama">Kristen</option>
+                <option value="Agama">Buddha</option>
+                <option value="Agama">Hindu</option>
+                <option value="Agama">Khonghucu</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Profil singkat</th>
+            <td>:</td>
+            <td>
+              <textarea name="komentar" id="" cols="30" rows="8"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="3" align="right">
+              <input type="button" value="input" />
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

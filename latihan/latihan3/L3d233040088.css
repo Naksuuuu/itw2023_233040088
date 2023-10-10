@@ -1,0 +1,46 @@
+body{
+    background-color: white;
+    font-family: Georgia;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+}
+h1{
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+h4{
+    font-style: italic;
+}
+h3,h4{
+    text-align: center;
+}
+p{
+    text-align: center;
+    text-indent: 10%;
+}
+p:first-of-type{
+    color: orange;
+}
+
+.hello{
+    color: red;
+}
+.hello:hover {
+    color: green;
+    text-decoration: none;
+}
+
+.hello2{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hello2:hover{
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}

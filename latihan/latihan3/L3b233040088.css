@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+    font-family: Georgia;
+}
+h1{
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+h4{
+    text-align: right;
+    font-style: italic;
+}
+p{
+    text-align: center;
+    text-indent: 10%;
+}
+p:first-of-type{
+    color: orange;
+}
+
+.hello:link{
+    color: white;
+    text-decoration: none;
+}
+.hello:hover {
+    color: white;
+}
+.hello:visited {
+    color: white;
+}
+.hello:active {
+    color: white;
+}
