@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* code */
+body{
+    font: 16px/28px arial sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(img/moroccan-flower-dark.webp);
+    /* hexa 3 digit berarti ujung nya sama */
+}
+
+
+.container{
+    width: 800px;
+    margin: auto ;
+    background-color: #fff;
+}
+
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: -10px;
+    margin-top: 10px;
+    text-indent: 20px;
+}
+
+
+.header a{
+    text-decoration: none;
+    color:salmon;
+    padding: 3px;
+}
+
+.header a:hover{
+    color: purple;
+    background-color: aqua;
+}
+.hero{
+    height: 350px;
+    background-image: url(img/blueforest.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -180px; 
+    /* 0 pertama horizontal lalu vertical */
+    border-top: 5px solid rgb(217, 239, 246);
+    border-bottom: 5px solid rgb(16, 16, 68);
+}
+/* ide sendiri */
+h1,h2{
+    font-variant: small-caps;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content .penulis {
+    font: 11px arial sans-serif;
+    margin-top: 5px;
+    margin-left: -40px;
+}
+
+.content .penulis a{
+    color: salmon;
+    text-decoration: none;
+}
+
+.content p{
+    text-indent: 40px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer .copy{
+    color: #eaeaea;
+    font-size: 12px;
+}
+
+

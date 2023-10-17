@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* code */
+body{
+    font: 16px/28px arial sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(img/moroccan-flower-dark.webp);
+    /* hexa 3 digit berarti ujung nya sama */
+}
+
+.top-bar {
+    background-color: #fff;
+    border-bottom: 3px solid #666;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.top-bar ul{
+    text-align: center;
+}
+
+.top-bar ul li{
+    display: inline-block;
+}
+
+.top-bar a img {
+    width: 30px;
+    padding: 10px;
+    margin-right: 8px;
+}
+
+
+.container{
+    width: 990px;
+    margin: auto ;
+    background-color: #fff;
+    margin-top: 90px;
+    position: relative;
+}
+
+.twitter {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/twitter\ ribbon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    /* text indent disini digunakan untuk menyembunyikan kalimat keluar halaman  */
+    position: absolute;
+    right: -89px;
+    top: -15px;
+}
+
+
+
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header ul {
+    text-align: center;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: -10px;
+    margin-top: 10px;
+    text-indent: 20px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.header a {
+    text-decoration: none;
+    color:salmon;
+    padding: 3px;
+}
+
+.header a:hover{
+    color: purple;
+    background-color: aqua;
+}
+.hero{
+    width: 827px;
+    height: 400px;
+    background-image: url(img/blueforest.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -180px; 
+    margin: auto;
+    
+    /* 0 pertama horizontal lalu vertical */
+    border-top: 5px solid rgb(217, 239, 246);
+    border-bottom: 5px solid rgb(16, 16, 68);
+}
+/* ide sendiri */
+h1,h2,h3{
+    font-variant: small-caps;
+}
+
+.main {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main .penulis {
+    font: 11px arial sans-serif;
+    margin-top: 5px;
+    margin-left: -40px;
+}
+
+.main .penulis a{
+    color: salmon;
+    text-decoration: none;
+}
+
+.main p{
+    text-indent: 40px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.sidebar img {
+    width: 90px;
+    float: left;
+    padding-right: 10px;
+    margin-bottom: -9px;
+}
+
+.sidebar p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer .copy{
+    color: #eaeaea;
+    font-size: 12px;
+}
