@@ -35,30 +35,75 @@ ol, ul {
 	list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
+    content: '';
 	content: none;
 }
 table {
-	border-collapse: collapse;
+    border-collapse: collapse;
 	border-spacing: 0;
 }
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins&display=swap');
+
+  :root {
+    --primary: #eaeaea;
+    --secondary: #fff;
+    --text: #333;
+    --link: salmon;
+
+  }
+
 
 
 /* code */
 body{
-    font: 16px/28px arial sans-serif;
-    background-color: #eaeaea;
-    color: #333;
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
+    color: var(--text);
     background-image: url(img/moroccan-flower-dark.webp);
     /* hexa 3 digit berarti ujung nya sama */
 }
+h1,h2,h3{
+    font-variant: normal;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
 
 .top-bar {
-    background-color: #fff;
+    background-color: var(--secondary);
     border-bottom: 3px solid #666;
     position: fixed;
     top: 0;
@@ -86,7 +131,7 @@ body{
 .container{
     width: 990px;
     margin: auto ;
-    background-color: #fff;
+    background-color: var(--secondary);
     margin-top: 90px;
     position: relative;
 }
@@ -112,8 +157,6 @@ body{
 }
 
 .header .judul {
-    font-size: 40px;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -128,32 +171,24 @@ body{
     text-indent: 20px;
 }
 
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
 
 .header a {
     text-decoration: none;
-    color:salmon;
+    color: var(--link);
     padding: 3px;
 }
 
 .header a:hover{
-    color: purple;
-    background-color: aqua;
+    color: var(--secondary);
+    background-color: var(--link);
+    border-radius: 10px;
 }
 .hero{
     width: 827px;
-    height: 400px;
-    background-image: url(img/blueforest.jpg);
+    height: 370px;
+    background-image: url(img/htmlhero.png);
     background-repeat: no-repeat;
-    background-position: 0 -180px; 
+    background-position: 0 0; 
     margin: auto;
     
     /* 0 pertama horizontal lalu vertical */
@@ -161,9 +196,6 @@ body{
     border-bottom: 5px solid rgb(16, 16, 68);
 }
 /* ide sendiri */
-h1,h2,h3{
-    font-variant: small-caps;
-}
 
 .main {
     width: 600px;
@@ -174,6 +206,12 @@ h1,h2,h3{
 
 .main h2{
     font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main h3 {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -196,17 +234,38 @@ h1,h2,h3{
     font-size: 14px;
 }
 
+.main .img {
+    width: 100%;
+    height: 400px;
+    background-image: url(img/web\ struktur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 -10px 0;
+}
+
+.main .mainhero {
+    margin: 0 0 30px 0;
+}
+
+.main ol {
+    list-style: decimal;
+    margin-left: 12px;
+}
+
+.main ul,.sidebar ul{
+    list-style: disc;
+    margin-left: 12px;
+}
+
 .sidebar {
     width: 300px;
     float: right;
-    padding: 20px;
+    padding: 10px;
+    margin: 20px 40px 0 0;
 }
 
 .sidebar h3 {
-    font-size: 20px;
-    font-weight: bold;
     margin-bottom: 5px;
-    color: #666;
 }
 
 .sidebar img {
