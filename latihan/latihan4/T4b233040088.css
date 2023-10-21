@@ -125,6 +125,11 @@ h4 {
     width: 30px;
     padding: 10px;
     margin-right: 8px;
+    transition: 1s;
+}
+
+.top-bar a img:hover {
+    transform: scale(1.4);
 }
 
 
