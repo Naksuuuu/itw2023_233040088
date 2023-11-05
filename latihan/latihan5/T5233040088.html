@@ -3,57 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gallery foto</title>
-    <link rel="stylesheet" href="css/cssreset.css" />
+    <title>LightBox</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>the view</h1>
+    <video src="img/video.loop.mp4" autoplay loop muted></video>
     <div class="container">
       <div class="content">
-        <ul class="gallery">
+        <ul>
           <li>
             <a href="#gambar-1">
               <img src="img/thumb/prettygirl.jpeg" alt="shelfia" />
-              <span>shelfia</span>
+              <span>Shelfia</span>
             </a>
-            <div class="overlay" id="gambar-1">
-              <a href="#" class="close">x</a>
-              <img src="img/fullsize/prettygirl.jpeg" alt="shelfia" />
-            </div>
           </li>
           <li>
             <a href="#gambar-2">
-              <img src="img/thumb/dampit.jpeg" alt="shelfia" />
-              <span>agustina</span>
+              <img src="img/thumb/oniba.jpeg" alt="shelfia" />
+              <span>Agustina</span>
             </a>
-            <div class="overlay" id="gambar-2">
-              <a href="#" class="close">x</a>
-              <img src="img/fullsize/dampit.jpeg" alt="" />
-            </div>
           </li>
           <li>
             <a href="#gambar-3">
               <img src="img/thumb/manyun.jpeg" alt="shelfia" />
-              <span>shelfia</span>
+              <span>Shelfia</span>
             </a>
-            <div class="overlay" id="gambar-3">
-              <a href="#" class="close">x</a>
-              <img src="img/fullsize/manyun.jpeg" alt="" />
-            </div>
           </li>
           <li>
             <a href="#gambar-4">
-              <img src="img/thumb/oniba.jpeg" alt="shelfia" />
-              <span>agustina</span>
+              <img src="img/thumb/dampit.jpeg" alt="shelfia" />
+              <span>Agustina</span>
             </a>
-            <div class="overlay" id="gambar-4">
-              <a href="#" class="close">x</a>
-              <img src="img/fullsize/oniba.jpeg" alt="" />
-            </div>
           </li>
-          <div class="clear"></div>
         </ul>
+      </div>
+      <div class="overlay" id="gambar-1">
+        <div class="overlay-img">
+          <a href="#" class="close"><i class="bx bx-x"></i></a>
+          <a href="#gambar-4" class="arrow-left"><i class="bx bx-arrow-to-left"></i></a>
+          <a href="#gambar-2" class="arrow-right"><i class="bx bx-arrow-to-right"></i></a>
+          <img src="img/fullsize/prettygirl.jpeg" alt="shelfia" />
+        </div>
+      </div>
+      <div class="overlay" id="gambar-2">
+        <div class="overlay-img">
+          <a href="#" class="close"><i class="bx bx-x"></i></a>
+          <a href="#gambar-1" class="arrow-left"><i class="bx bx-arrow-to-left"></i></a>
+          <a href="#gambar-3" class="arrow-right"><i class="bx bx-arrow-to-right"></i></a>
+          <img src="img/fullsize/oniba.jpeg" alt="shelfia" />
+        </div>
+      </div>
+      <div class="overlay" id="gambar-3">
+        <div class="overlay-img">
+          <a href="#" class="close"><i class="bx bx-x"></i></a>
+          <a href="#gambar-2" class="arrow-left"><i class="bx bx-arrow-to-left"></i></a>
+          <a href="#gambar-4" class="arrow-right"><i class="bx bx-arrow-to-right"></i></a>
+          <img src="img/fullsize/manyun.jpeg" alt="shelfia" />
+        </div>
+      </div>
+      <div class="overlay" id="gambar-4">
+        <div class="overlay-img">
+          <a href="#" class="close"><i class="bx bx-x"></i></a>
+          <a href="#gambar-3" class="arrow-left"><i class="bx bx-arrow-to-left"></i></a>
+          <a href="#gambar-1" class="arrow-right"><i class="bx bx-arrow-to-right"></i></a>
+          <img src="img/fullsize/dampit.jpeg" alt="shelfia" />
+        </div>
       </div>
     </div>
   </body>
